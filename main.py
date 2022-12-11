@@ -1,5 +1,5 @@
-from Componentes import *
-from Ordenadores import *
+from componentes import *
+from ordenadores import *
 
 if __name__ == '__main__':
 
