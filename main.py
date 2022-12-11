@@ -64,7 +64,7 @@ if __name__ == '__main__':
     ImprimirLista(ListaOrdenadores.lista)
 
     # Prueba de quitar ordenadores de la lista
-    print("PRUEBA QUITARR ORDENADORES A LA LISTA: ")
+    print("PRUEBA QUITAR ORDENADORES A LA LISTA: ")
     ListaOrdenadores.quitar(ordenador2)
     print(ListaOrdenadores)
     ImprimirLista(ListaOrdenadores.lista)
