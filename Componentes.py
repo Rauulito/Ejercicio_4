@@ -1,3 +1,7 @@
+# En este archivo se encuentran las clases y funciones necesarias para la defincion de los componentes que se van
+# a utilizar en la creación de los ordenadores.
+#Te adjunto un pequeño gráfico de la relación entre las clases que me ha salido util para programarlo utilizando las herencias.
+
 import abc
 
 class Componente(metaclass=abc.ABCMeta):

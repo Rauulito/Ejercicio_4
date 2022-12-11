@@ -1,3 +1,6 @@
+#En este archivo se encuentran las clases y funciones necesarias para la creación de ordenadores y
+# la gestión de las listas de ordenadores.
+#Se ha utilizado el patrón de diseño Builder para la creación de los ordenadores.
 class Ordenador:
     def __init__(self):
         self.Unidad_central = None
@@ -24,8 +27,8 @@ class HardwareEngineer:
     def Construir_Ordenador(self, Unidad_central, Periferico_entrada, Periferico_salida):
         self.builder = OrdenadorBuilder()
         steps = (self.builder.GenerarUnidadCentral(Unidad_central),
-                 self.builder.AñadirPerifericoEntrada(Periferico_entrada),
-                 self.builder.AñadirPerifericoSalida(Periferico_salida))
+                self.builder.AñadirPerifericoEntrada(Periferico_entrada),
+                self.builder.AñadirPerifericoSalida(Periferico_salida))
         [step for step in steps]
 
     @property
@@ -48,10 +51,10 @@ def Imprimir(ordenador):
         print("      ", elem)
     for elem in ordenador.Perifericos_salida:
         print("      ", elem)
-  
+
 def AñadirEntrada(ordenador, Periferico_entrada):
     ordenador.Perifericos_entrada.append(Periferico_entrada)
-  
+
 def AñadirSalida(ordenador, Periferico_salida):
     ordenador.Perifericos_salida.append(Periferico_salida)
 
@@ -83,4 +86,3 @@ class mi_lista:
 def ImprimirLista(lista):
     for elem in lista:
         Imprimir(elem)
-        
